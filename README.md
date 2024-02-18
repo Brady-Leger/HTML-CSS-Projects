@@ -1,7 +1,11 @@
 # HTML CSS Projects
  <!DOCTYPE html>
- <html>
 <html lang="en">
-    <title>My first code</title>
-    <p>This is the first time I am writing my own code</p>
-</html> 
+    <head>
+        <title>My first code.</title>
+        <meta charset="utf-8">
+    </head>
+    <body>    
+        <p>This is the first time I am writing my own code</p>
+    </body>
+</html>
