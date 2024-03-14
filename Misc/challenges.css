@@ -1,0 +1,17 @@
+table, th, td {
+    border: 1px solid;
+    padding: 5px;
+}
+
+th {
+    background-color: red;
+}
+
+.video-container {
+    max-width: 50%; /* Set a pixel value instead if no parent container*/
+    margin: left; /* Center the container */
+}
+.video-container video {
+    width: 50%; /* Fill the available width */
+    height: auto; /* Adjust height automatically */
+}
