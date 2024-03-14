@@ -11,15 +11,16 @@ html {
 }
 
 body {
-    font-size: 14 px;
-    margin: 0;
+    font-size: 14px;
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 0px 20px;
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
     line-height: 1.42857143;
     color: #333;
-    background-color: #fff;
+    background-color: 	#8788EE;
 }
 
-footer,
 nav {
     display: block;
 }
@@ -29,13 +30,14 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
+    margin-top: 50px;
     line-height: 50px;
     font-weight: 900;
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
-    color: #e91c1c;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    color: #7fd81e;
+    text-shadow: 2px 2px 3px black;
 }
 
 h1::after { /*This is the underline*/
@@ -43,14 +45,15 @@ h1::after { /*This is the underline*/
     content: " ";
     height: 2px;
     width: 150px;
-    background-color: #e91c1c;
+    background-color: #7fd81e;
     margin: 5px auto 40px;
-    box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 2px 3px black;
 }
 
 h2 {
     line-height: 50px;
-    color: #e91c1c;
+    color: #7fd81e;
+    text-shadow: 2px 2px 3px black;
 }
 
 h3 {
@@ -70,6 +73,10 @@ p {
     font-weight: 300;
     line-height: 30px;
     padding-bottom: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #7fd81e;
+    text-shadow: 2px 2px 3px black;
 }
 
 .text-center {
@@ -92,9 +99,7 @@ section {
 }
 
 .container {
-    height: 105px;
-    max-height: 340px;
-    display: inline-block;
+        display: inline-block;
 }
 
 .container-fluid {
@@ -117,7 +122,6 @@ section {
 }
 
 .wrap {
-    height: 100%;
     width: 100%;
     position: absolute;
     /*This ensures image cannot render outside of their container
@@ -139,6 +143,14 @@ section {
     position: fixed;
     z-index: 100;
     /* background-color: rgba(255,255,255,0.5); */
+}
+
+.page-top {
+    margin-top: 100px;
+}
+
+.iframe {
+    text-align: center;
 }
 
 /*--------------------------------------------------------------------------
