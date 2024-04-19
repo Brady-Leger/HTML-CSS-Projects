@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>B Leger Portfolio</title>
     <link rel="stylesheet" type="text/css" href="../Portfolio Site/stylesheet.css">
-</head>
+   </head>
 
 <!--Body-->
 <body class="Background">
@@ -47,6 +47,39 @@
                 <br> Thank you for taking the time to check it out!
             </p>
         </strong>
+    </div>
+     <!-- Slideshow section added -->
+     <div id="Slideshow">
+        <div id="Slideshow_Background"> 
+            <div id="Slideshow_Container">
+                <!-- Slide 1 of 3 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/Nice_Me.jpg" alt="Picture of yourself">
+                    <div class="text">If I don't know how to do something I will tell you I don't and then I will learn how to do that thing!</div>
+                </div>
+                <!-- Slide 2 of 3 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/Me_At_Desk.png" alt="Working Hard?"> 
+                    <div class="text">I am a studying to become a front end Developer,<br>I have basic knowledge in HTML, CSS, JavaScript,</div>
+                </div>
+                <!-- Slide 3 of 3 -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="images/Cool_Milo.jpg" alt="Cool Milo">
+                    <div class="text">My youngest dog Milo looking #Cool</div>
+                </div>
+                <!-- Previous and next buttons -->
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br> <!-- Adds a space between the slideshow images and the dots -->
+
+           
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </div>
     </div>
     
     <!--About section-->
@@ -95,7 +128,7 @@
         <div class="Column_1 Column_tall">
             <h1>Contact</h1>
             <!--This specifies where and how to send the form data; we are leaving it blank-->
-            <form action="" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+            <form action="" method="POST" id="myForm"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
                 <label>Name:</label>
                 <input type="text" placeholder="Please enter your name here">
                 <label>Email:</label>
@@ -110,9 +143,10 @@
     <!--Footer section-->
     <footer>
         <p>
-            <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+            <p class="center">Brady 'Peach' Leger, <a href="https://github.com/Brady-Leger" target="_blank">My GitHub.</a></p>
             <br>
         </p>
     </footer>
+    <script src="portfolio.js"></script>
 </body>
 </html>
